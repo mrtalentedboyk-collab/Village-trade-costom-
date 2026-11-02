@@ -39,7 +39,9 @@ public class TradeEditorMod implements ModInitializer {
             if (!sp.isCreative()) return;
             VillagerEntity villager = EDITING.get(sp.getUuid());
             if (villager == null || villager.isRemoved()) return;
-            villager.setOffersFromServer(TradeCodec.parse(payload.data()));
+                        var list = villager.getOffers();
+            list.clear();
+            list.addAll(TradeCodec.parse(payload.data()));w
         });
     }
 }
