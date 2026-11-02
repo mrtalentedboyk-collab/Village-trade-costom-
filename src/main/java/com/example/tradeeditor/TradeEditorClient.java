@@ -9,4 +9,4 @@ public class TradeEditorClient implements ClientModInitializer {
         ClientPlayNetworking.registerGlobalReceiver(OpenEditorPayload.ID, (payload, context) ->
                 context.client().setScreen(new TradeEditorScreen(payload.data())));
     }
-}a
+}
