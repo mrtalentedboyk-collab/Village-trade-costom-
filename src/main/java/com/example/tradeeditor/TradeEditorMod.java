@@ -41,7 +41,7 @@ public class TradeEditorMod implements ModInitializer {
             if (villager == null || villager.isRemoved()) return;
                         var list = villager.getOffers();
             list.clear();
-            list.addAll(TradeCodec.parse(payload.data()));w
+            list.addAll(TradeCodec.parse(payload.data()));
         });
     }
 }
