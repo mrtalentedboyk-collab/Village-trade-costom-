@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "tradeeditor",
+  "version": "${version}",
+  "name": "Villager Trade Editor",
+  "description": "Creative mode e villager e right click kore trade customize koro.",
+  "authors": ["You"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.tradeeditor.TradeEditorMod"],
+    "client": ["com.example.tradeeditor.TradeEditorClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}w
